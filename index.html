@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #ffd3c2;
+    color: #121212;
+}
+
+#header {
+    padding: 35px 25px;
+    background-color: #121212;
+    text-align: center;
+    color: #f5c6c6;
+}
+
+#header h1 {
+    font-weight: bold;
+    color: #df9a9a;
+    margin-bottom: 8px;
+}
+
+nav {
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    background-color: #800000;
+    gap: 25px;
+}
+
+nav a {
+    color: #cf8c8c;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #121212;
+}
+
+#main {
+    background-color: #e9a18b;
+    margin: 25px auto;
+    padding: 35px;
+    max-width: 1120px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
+}
+
+.image-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.image-container img {
+    margin: 0 8px;
+    width: 285px;
+    height: 190px;
+    object-fit: cover;
+    border: 2px solid #121212;
+}
+
+ul {
+    padding: 12px 22px;
+    margin-left: 25px;
+    margin-bottom: 35px;
+}
+
+ul li {
+    margin-bottom: 12px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 35px;
+    border-collapse: collapse;
+    margin-top: 12px;
+    background-color: #ffc3c3;
+}
+
+th, td {
+    padding: 14px 16px;
+}
+
+th {
+    background-color: #800000;
+    color: #dfc9c9;
+    text-align: center;
+}
+
+form {
+    background-color: #ffd9d9;
+    padding: 28px;
+    margin-top: 18px;
+    max-width: 100%;
+    border: 1px solid #121212;
+}
+
+button {
+    background-color: #800000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #121212;
+}
+</style>
+</head>
+
+<body>
+<div id="header">
+    <h1>Ekstrakurikuler Coding and Web Design</h1>
+    <h3>Place to enhance your coding skill and logical thinking</h3>
+</div>
+
+<nav>
+    <a href="#">Halaman Utama</a>
+    <a href="#">Agenda & Materi</a>
+    <a href="#">Registrasi</a>
+    <a href="#">Dokumentasi</a>
+</nav>
+
+<div id="main">
+    <h1 style="color: #800000;">Apa yang akan kita pelajari?</h1>
+
+    <p style="margin-top: 12px; font-size: 15.5px; color: #121212;">
+        Melalui kegiatan ini, kamu akan diajak mengenal dunia pemrograman dan teknologi digital dari tingkat paling dasar. Kami menghadirkan suasana belajar yang seru untuk melatih logika berpikir serta daya kreativitasmu dalam merancang sebuah situs web dari nol hingga menjadi tampilan yang utuh, nyaman diakses di berbagai perangkat, dan menarik.
+    </p>
+
+    <!-- URUTAN 1: TABEL JADWAL -->
+    <h3 style="padding-top: 25px; color: #800000;">Agenda Pertemuan Bulan Ini</h3>
+
+    <table border="1" cellpadding="12" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Minggu / Hari</th>
+                <th>Topik Pembahasan</th>
+                <th>Tempat</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">Minggu 1 (Jumat)</td>
+                <td><strong>Dasar Struktur Halaman Web</strong><br> Pemasangan aplikasi kode editor, pengenalan tag utama HTML, serta penyusunan teks dan daftar.</td>
+                <td style="text-align: center;">Ruangan Multimedia</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Minggu 2 (Jumat)</td>
+                <td><strong>Pengaturan Gaya & Styling Warna</strong><br> Penerapan CSS secara inline, internal, maupun eksternal untuk memperindah tampilan teks.</td>
+                <td style="text-align: center;">Ruangan Multimedia</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Minggu 3 (Jumat)</td>
+                <td><strong>Layouting Web:</strong><br> Memanfaatkan teknik Flexbox pada CSS untuk menyusun posisi gambar dan tulisan agar rapi.</td>
+                <td style="text-align: center;">Ruangan Multimedia</td>
+            </tr>
+            <tr>
+                <td style="text-align: center;">Minggu 4 (Jumat)</td>
+                <td><strong>Proyek Akhir Bulan:</strong><br> Merancang halaman web portofolio pribadi sederhana dengan memadukan HTML dan CSS.</td>
+                <td style="text-align: center;">Ruangan Multimedia</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: #121212; color: #ffffff; font-weight: bold; text-align: center;">
+                <td colspan="3">Jam kegiatan: 13.30 - 14.30 WIB</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- URUTAN 2: 3 FOTO GALERI (Ganti nama file di bagian src sesuai fotomu) -->
+    <div class="image-container">
+        <img src="HTML.webp" alt="Foto Pembelajaran HTML">
+        <img src="css.jpeg" alt="Foto Pembelajaran CSS">
+        <img src="javascript.jfif" alt="Foto Pembelajaran JavaScript">
+    </div>
+
+    <!-- URUTAN 3: DAFTAR MATERI -->
+    <h3 style="padding-top: 12px; color: #800000;">Program ini disusun khusus untuk pemula. Berikut adalah pokok bahasannya:</h3>
+
+    <ul>
+        <li><span style="font-weight: bold; color: #800000;">HTML (Hypertext Markup Language): </span>Berlatih menyusun kerangka dan fondasi dasar halaman web, mulai dari menata teks, menyisipkan gambar, membuat tabel, hingga formulir input.</li>
+        <li><span style="font-weight: bold; color: #800000;">CSS (Cascading Style Sheets): </span>Mempercantik tampilan visual situs agar enak dipandang. Kita akan mempraktikkan pemilihan warna, jenis huruf, tata letak (layouting), serta tampilan yang menyesuaikan layar HP maupun laptop.</li>
+        <li><span style="font-weight: bold; color: #800000;">JS (JavaScript): </span>Memberikan efek interaktif pada halaman web. JavaScript dipakai untuk menciptakan animasi sederhana, kotak pesan pop-up, aplikasi kalkulator mini, dan fitur dinamis lainnya.</li>
+        <li><span style="font-weight: bold; color: #800000;">Dasar Logika Python (Pilihan Tambahan): </span>Mempelajari konsep awal algoritma pemecahan masalah (problem solving) memakai bahasa Python yang ringkas dan mudah dipahami pemula.</li>
+    </ul>
+
+    <!-- URUTAN 4: FORM PENDAFTARAN -->
+    <div id="bagian-form">
+        <h3 style="color: #800000; padding-bottom: 6px;">Formulir Pendaftaran Anggota</h3>
+        <p style="margin-top: 8px; font-size: 15px; color: #333333;">Silakan lengkapi data berikut untuk bergabung. Pastikan penulisan nama sesuai dengan daftar absensi kelas.</p>
+
+        <form>
+            <div id="nama">
+                <label style="font-weight: bold;">Nama Lengkap</label><br>
+                <input type="text" placeholder="ketik nama lengkapmu di sini" style="width: 100%; padding: 10px; margin-top: 6px; border: 1px solid #121212;">
+            </div>
+
+            <div id="kelas" style="margin-top: 18px;">
+                <label style="font-weight: bold;">Jenjang Kelas: </label><br>
+                <div style="margin-top: 6px;">
+                    <input type="radio" name="kelas"><label style="font-weight: normal; margin-right: 18px;"> Kelas 10</label>
+                    <input type="radio" name="kelas"><label style="font-weight: normal; margin-right: 18px;"> Kelas 11</label>
+                    <input type="radio" name="kelas"><label style="font-weight: normal;"> Kelas 12</label>
+                </div>
+            </div>
+
+            <div id="minat" style="margin-top: 18px;">
+                <label style="font-weight: bold;">Bidang Minat Utama (Dapat memilih lebih dari satu):</label><br>
+                <div style="margin-top: 6px;">
+                    <input type="checkbox"><label style="font-weight: normal; margin-right: 15px;"> Web Programming (Frontend)</label><br>
+                    <input type="checkbox"><label style="font-weight: normal; margin-right: 15px;"> Python / Logika Dasar</label><br>
+                    <input type="checkbox"><label style="font-weight: normal;"> UI/UX Design</label>
+                </div>
+            </div>
+
+            <button type="submit" style="margin-top: 22px;">Daftar Sekarang</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
